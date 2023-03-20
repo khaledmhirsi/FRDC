@@ -2,7 +2,7 @@
 Face Recognition Database Creator
 
 Welcome to my first ever (Big) project I made using Python.
-This was a work I did from a request sent to me online one year ago.
+This was a work I did from a request sent to me online in 2021.
 
 Purpose: This python application can be used to create a face database of multiple people.
 Usefulness: You can then use the database created to train an AI with machine learning.
