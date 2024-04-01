@@ -11,4 +11,4 @@ Well, the idea of the project was to help create a video automated attendance sy
 
 I hope you will make good and fair use of my program.
 
-- Kha-Maker
+- Khaled
