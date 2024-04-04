@@ -4,13 +4,14 @@
 
 # Imports
 from tkinter import * # For the GUI 
-from tkinter import filedialog, messagebox # For browsing the images, open spreadsheets, error window
+from tkinter import filedialog, messagebox, ttk # For browsing the images, open spreadsheets, error window
 from PIL import ImageTk, Image # For Displaying Images on the GUI
 import requests # For Downloading image from URL
 import urllib.request # For Downloading image from URL if requests doesn't work
 import shutil # For Creating temporary files
 import os # For Managing files and directories
 import cv2 # For Preprocess images
+
 
 # System program
 class GUIfaceRecoginitionBasedSystem:
@@ -35,11 +36,13 @@ class GUIfaceRecoginitionBasedSystem:
         
         # Initiate GUI 
         self.root = Tk() 
-        
+        self.root.tk.call('source', 'theme\\forest-dark.tcl')
+        ttk.Style().theme_use('forest-dark')
+
+
         self.root.title("Face Recognition App") # Title of the window
         self.root.geometry("1350x800+0+0") # Size of the window
         self.root.iconbitmap('data/icon.ico')
-        
         
         self.top_menu = Menu(self.root)
         self.root.config(menu=self.top_menu)  
